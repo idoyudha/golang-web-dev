@@ -25,6 +25,9 @@ func main() {
 		for scanner.Scan() {
 			ln := scanner.Text()
 			fmt.Println(ln)
+			if ln == "" {
+				break
+			}
 		}
 
 		fmt.Println("Code got here.")
