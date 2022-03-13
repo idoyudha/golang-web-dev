@@ -3,12 +3,13 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"log"
 	"net"
 )
 
 func main() {
-	l, err := net.Listen("tcp", ":8080")
+	l, err := net.Listen("tcp", ":8081")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -21,7 +22,7 @@ func main() {
 			continue
 		}
 
-		go serve(conn)
+		serve(conn)
 	}
 }
 
@@ -36,4 +37,5 @@ func serve(c net.Conn) {
 			break
 		}
 	}
+	io.WriteString(c, "I see you connected")
 }
