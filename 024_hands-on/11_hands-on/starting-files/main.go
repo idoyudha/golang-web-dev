@@ -5,6 +5,10 @@ import (
 	"net/http"
 )
 
+func init() {
+
+}
+
 func main() {
 
 	http.ListenAndServe(":8080", nil)
