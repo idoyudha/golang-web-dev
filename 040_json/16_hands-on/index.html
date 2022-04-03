@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hands on</title>
+</head>
+<body>
+<script>
+    let status = [
+        {
+            "code": 200,
+            "string": "StatusOK",
+        },
+        {
+            "code": 301,
+            "string": "StatusMovedPermanently",
+        },
+        {
+            "code": 302,
+            "string": "StatusFound",
+        },
+        {
+            "code": 303,
+            "string": "StatusSeeOther",
+        },
+        {
+            "code": 307,
+            "string": "StatusTemporaryRedirect",
+        },
+        {
+            "code": 400,
+            "string": "StatusBadRequest",
+        },
+        {
+            "code": 401,
+            "string": "StatusUnauthorized",
+        },
+        {
+            "code": 402,
+            "string": "StatusPaymentRequired",
+        },
+        {
+            "code": 403,
+            "string": "StatusForbidden",
+        },
+        {
+            "code": 404,
+            "string": "StatusNotFound",
+        },
+        {
+            "code": 405,
+            "string": "StatusMethodNotAllowed",
+        },
+        {
+            "code": 418,
+            "string": "StatusTeapot",
+        },
+        {
+            "code": 500,
+            "string": "StatusInternalServerError",
+        },
+    ]
+    var data = JSON.stringify(status);
+    document.write(data);
+</script>
+</body>
+</html>
